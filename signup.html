@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="signup.js"></script>
     <title>SignUp</title>
+    <script>
+        
+
+    </script>
 </head>
 <body>
     <div class="wrapper">
@@ -12,20 +17,29 @@
         <div class="name">
             <div class="tag">이름</div>
             <input type="text" id="name" placeholder="이름을 입력해주세요.">
+            <div id="nameError" class="error"></div>
         </div>
         <div class="email">
             <div class="tag">이메일</div>
             <input type="text" id="email" placeholder="이메일을 입력해주세요.">
+            <div id="emailError" class="error"></div>
         </div>
-        <div class="ID">
+        <div class="id">
             <div class="tag">ID</div>
             <input type="text" id="ID" placeholder="아이디를 입력해주세요.">
+            <div id="IDError" class="error"></div>
         </div>
-        <div class="PW">
+        <div class="password">
             <div class="tag">PW</div>
-            <input type="password" id="PW" placeholder="비밀번호를 입력해주세요.">
+            <input type="password" id="password" placeholder="비밀번호를 입력해주세요.">
+            <div id="passwordError" class="error"></div>
         </div>
-        <button class="btn_signup">SIGN UP</button>
+        <div class="passwordCheck">
+            <div class="tag">PW 확인</div>
+            <input type="password" id="passwordCheck" placeholder="비밀번호를 다시 입력해주세요.">
+            <div id="passwordCheckError" class="error"></div>
+        </div>
+        <button class="btn_signup" onclick="SignUpCheck()">SIGN UP</button>
     </div>
 </body>
 </html>
